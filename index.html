@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="cardsInformation">
+        <div>
+            <figure class="cardBack">
+                <img src="./bg-card-back.png">
+            </figure>
+            <span class="validationCode" id="cvc">000</span>
+            <figure class="cardFront">
+                <img src="./bg-card-front.png">
+            </figure>
+            <figure class="cardLogo">
+                <img src="./card-logo.svg">
+            </figure>
+            <div class="dataCard">
+                <p class="cardNumber white" id="cardNumber">0000 0000 0000 0000</p>
+                <span class="cardName white" id="cardName">JANE APPLESEED</span>
+                <span class="cardDate white"><span id="cardMonth">00</span>/<span id="cardYear">00</span></span>
+            </div>
+        </div>
+    </section>
+    <section class="formContent">
+        <div id="success" class="text-success hidden">
+            <img class="" src="./icon-complete.svg" alt="sucess">
+            <h1>THANKS YOU</h1>
+            <P>We've added your card details</P>
+            <button type="button" id="success-button" class="white">Continue</button>
+        </div>
+        <form id="form">
+            <div class="content-input">
+                <label for="card-name">CARDHOLDER NAME</label>
+                <input id="card-name" maxlength="30" class="addSpace" type="text" placeholder="e.g. Jane Appleseed">
+            </div>
+            <div class="content-input">
+                <label for="card-number">CARD NUMBER</label>
+                <input id="card-number" minlength="16" maxlength="16" class="addSpace" type="text" placeholder="e.g. 1234 5678 9123 0000">
+            </div>
+            <div class="content-input-column content-input">
+                <label for="card-date">EXP. DATE (MM/YY)</label>
+                <label for="card-cvc">CVC</label>
+            </div>
+            <div class="content-input-column content-input">
+                <div>
+                    <div>
+                        <input id="card-date-mm" type="text" maxlength="2" class="addSpace" placeholder="MM">
+                    </div>
+                    <div>
+                        <input id="card-date-yy" maxlength="2" class="addSpace" type="text" placeholder="YY">
+                    </div>
+                </div>
+                <div class="d-block">
+                    <input id="card-cvc" maxlength="3" width="100" class="addSpace" type="text" placeholder="e.g. 123">
+                </div>
+            </div>
+            <button type="submit" id="sentData" class="white">Confirm</button>
+        </form>
+    </section>
+ <script src="./main.js"></script>   
+</body>
+</html>

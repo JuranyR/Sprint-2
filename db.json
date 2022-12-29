@@ -1,0 +1,28 @@
+{
+  "dataCardUser": [
+    {
+      "id": 1,
+      "card-name": "Adelia Ramírez Pineda",
+      "card-number": "2234242242423424",
+      "card-date-mm": "3",
+      "card-date-yy": "24",
+      "card-cvc": "234"
+    },
+    {
+      "card-name": "Pepito Perez",
+      "card-number": "2342342342342342",
+      "card-date-mm": "12",
+      "card-date-yy": "10",
+      "card-cvc": "312",
+      "id": 2
+    },
+    {
+      "card-name": "Angie Natalia M Ramírez",
+      "card-number": "1232131231231231",
+      "card-date-mm": "12",
+      "card-date-yy": "12",
+      "card-cvc": "133",
+      "id": 3
+    }
+  ]
+}
